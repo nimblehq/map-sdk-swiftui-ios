@@ -1,0 +1,6 @@
+framework module Pods_MapSDKSwiftUI_MapSDKSwiftUIUITests {
+  umbrella header "Pods-MapSDKSwiftUI-MapSDKSwiftUIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
