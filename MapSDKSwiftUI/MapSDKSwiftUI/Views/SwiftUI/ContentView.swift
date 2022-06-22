@@ -14,7 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         ZStack(alignment: .top) {
-            MapView {
+            MapViewBridge {
                 presentingToast = true
             } mapViewIdleAt: {
                 print("MapView is idling")

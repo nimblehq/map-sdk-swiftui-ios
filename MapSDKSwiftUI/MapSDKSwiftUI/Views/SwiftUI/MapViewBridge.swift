@@ -8,7 +8,7 @@
 import GoogleMaps
 import SwiftUI
 
-struct MapView: UIViewRepresentable {
+struct MapViewBridge: UIViewRepresentable {
 
     var mapViewDidLongPressAt: (() -> Void)? = nil
     var mapViewIdleAt: (() -> Void)? = nil
@@ -35,9 +35,9 @@ struct MapView: UIViewRepresentable {
 
     final class MapViewCoordinator: NSObject, GMSMapViewDelegate {
 
-        var mapView: MapView
+        var mapView: MapViewBridge
 
-        init(_ mapView: MapView) {
+        init(_ mapView: MapViewBridge) {
             self.mapView = mapView
         }
 

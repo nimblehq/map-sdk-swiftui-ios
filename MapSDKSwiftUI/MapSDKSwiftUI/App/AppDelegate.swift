@@ -10,7 +10,10 @@ import GoogleMaps
 class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+
+        // Put the Google Maps setup code here
         GMSServices.provideAPIKey(googleMapApiKey)
+
         return true
     }
 }

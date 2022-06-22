@@ -11,7 +11,7 @@
 		2426A0152861DBE50046F27A /* Secrets.swift.example in Resources */ = {isa = PBXBuildFile; fileRef = 2426A0132861DBE50046F27A /* Secrets.swift.example */; };
 		2426A01E28629F850046F27A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426A01D28629F850046F27A /* MapViewController.swift */; };
 		2426A02028629FA90046F27A /* MapViewControllerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426A01F28629FA90046F27A /* MapViewControllerBridge.swift */; };
-		2426A0222862A70D0046F27A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426A0212862A70D0046F27A /* MapView.swift */; };
+		2426A0222862A70D0046F27A /* MapViewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426A0212862A70D0046F27A /* MapViewBridge.swift */; };
 		2426A0242862A8360046F27A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426A0232862A8360046F27A /* Constants.swift */; };
 		2470F38A2861BE1D000F9F81 /* MapSDKSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2470F3892861BE1D000F9F81 /* MapSDKSwiftUIApp.swift */; };
 		2470F38C2861BE1D000F9F81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2470F38B2861BE1D000F9F81 /* ContentView.swift */; };
@@ -48,7 +48,7 @@
 		2426A0132861DBE50046F27A /* Secrets.swift.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Secrets.swift.example; sourceTree = "<group>"; };
 		2426A01D28629F850046F27A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2426A01F28629FA90046F27A /* MapViewControllerBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerBridge.swift; sourceTree = "<group>"; };
-		2426A0212862A70D0046F27A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2426A0212862A70D0046F27A /* MapViewBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewBridge.swift; sourceTree = "<group>"; };
 		2426A0232862A8360046F27A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2470F3862861BE1D000F9F81 /* MapSDKSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapSDKSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2470F3892861BE1D000F9F81 /* MapSDKSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSDKSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -120,10 +120,8 @@
 		2426A0192861DDA00046F27A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2470F38B2861BE1D000F9F81 /* ContentView.swift */,
-				2426A01D28629F850046F27A /* MapViewController.swift */,
-				2426A01F28629FA90046F27A /* MapViewControllerBridge.swift */,
-				2426A0212862A70D0046F27A /* MapView.swift */,
+				2426A0272862D9940046F27A /* SwiftUI */,
+				2426A0262862D9800046F27A /* UIKit */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +133,24 @@
 				2470F3892861BE1D000F9F81 /* MapSDKSwiftUIApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		2426A0262862D9800046F27A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2426A01D28629F850046F27A /* MapViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2426A0272862D9940046F27A /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2470F38B2861BE1D000F9F81 /* ContentView.swift */,
+				2426A0212862A70D0046F27A /* MapViewBridge.swift */,
+				2426A01F28629FA90046F27A /* MapViewControllerBridge.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		2470F37D2861BE1D000F9F81 = {
@@ -496,7 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2470F3B42861BFC4000F9F81 /* AppDelegate.swift in Sources */,
-				2426A0222862A70D0046F27A /* MapView.swift in Sources */,
+				2426A0222862A70D0046F27A /* MapViewBridge.swift in Sources */,
 				2426A01E28629F850046F27A /* MapViewController.swift in Sources */,
 				2426A02028629FA90046F27A /* MapViewControllerBridge.swift in Sources */,
 				2426A0142861DBE50046F27A /* Secrets.swift in Sources */,

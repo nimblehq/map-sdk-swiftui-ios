@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MapSDKSwiftUIApp: App {
 
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
 
     var body: some Scene {
         WindowGroup {
