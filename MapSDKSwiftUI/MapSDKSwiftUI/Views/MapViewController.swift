@@ -10,11 +10,10 @@ import UIKit
 
 class MapViewController: UIViewController {
 
-    let map =  GMSMapView(frame: .zero)
-    var isAnimating: Bool = false
+    let gmsMapView = GMSMapView(frame: .zero)
 
     override func loadView() {
         super.loadView()
-        self.view = map
+        self.view = gmsMapView
     }
 }
