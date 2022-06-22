@@ -15,26 +15,20 @@ A project for showcasing how to use Google Maps SDK with SwiftUI.
 
 - Clone the project
 
-  ```shell
+  ```bash
   $ git clone https://github.com/nimblehq/map-sdk-swiftui-ios.git
   ```
 
   Navigate to the project directory
 
-  ```shell
-  $ cd map-sdk-swiftui-ios
-  ```
-
-  Install Bundle
-
   ```bash
-  $ bundle install
+  $ cd map-sdk-swiftui-ios/MapSDKSwiftUI/
   ```
 
   Install the latest Pods
 
-  ```shell
-  $ bundle exec pod install
+  ```bash
+  $ pod install
   ```
 
 
