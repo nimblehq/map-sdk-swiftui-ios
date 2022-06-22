@@ -10,8 +10,8 @@ import SwiftUI
 
 struct MapView: UIViewRepresentable {
 
-    var mapViewWillMove: (() -> Void)? = nil
-    var idleAt: (() -> Void)? = nil
+    var mapViewDidLongPressAt: (() -> Void)? = nil
+    var mapViewIdleAt: (() -> Void)? = nil
 
     private let gmsMapView = GMSMapView(frame: .zero)
 
@@ -41,12 +41,12 @@ struct MapView: UIViewRepresentable {
             self.mapView = mapView
         }
 
-        func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
-            self.mapView.mapViewWillMove?()
+        func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
+            self.mapView.mapViewDidLongPressAt?()
         }
 
         func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
-            self.mapView.idleAt?()
+            self.mapView.mapViewIdleAt?()
         }
     }
 }

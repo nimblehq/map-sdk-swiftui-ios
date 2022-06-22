@@ -10,8 +10,8 @@ import SwiftUI
 
 struct MapViewControllerBridge: UIViewControllerRepresentable {
 
-    var mapViewWillMove: (() -> Void)? = nil
-    var idleAt: (() -> Void)? = nil
+    var mapViewDidLongPressAt: (() -> Void)? = nil
+    var mapViewIdleAt: (() -> Void)? = nil
 
     func makeUIViewController(context: Context) -> MapViewController {
         let uiViewController = MapViewController()
@@ -38,12 +38,12 @@ struct MapViewControllerBridge: UIViewControllerRepresentable {
             self.mapViewControllerBridge = mapViewControllerBridge
         }
 
-        func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
-            self.mapViewControllerBridge.mapViewWillMove?()
+        func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
+            self.mapViewControllerBridge.mapViewDidLongPressAt?()
         }
 
         func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
-            self.mapViewControllerBridge.idleAt?()
+            self.mapViewControllerBridge.mapViewIdleAt?()
         }
     }
 }

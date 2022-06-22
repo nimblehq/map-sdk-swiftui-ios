@@ -4,17 +4,21 @@ PODS:
   - GoogleMaps/Base (6.2.1)
   - GoogleMaps/Maps (6.2.1):
     - GoogleMaps/Base
+  - ToastUI (2.0.0)
 
 DEPENDENCIES:
   - GoogleMaps (= 6.2.1)
+  - ToastUI
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - GoogleMaps
+    - ToastUI
 
 SPEC CHECKSUMS:
   GoogleMaps: 20d7b12be49a14287f797e88e0e31bc4156aaeb4
+  ToastUI: 391eb9a1cc15e7ef4b79ee112e4a0b969259154f
 
-PODFILE CHECKSUM: e132cda078d0e98268f8b94ad87bfc8ade12b23a
+PODFILE CHECKSUM: b98b8f6a1669be8a688eadedfa1b17523ffabb8f
 
 COCOAPODS: 1.11.3

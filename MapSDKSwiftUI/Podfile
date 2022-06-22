@@ -2,14 +2,13 @@
 # platform :ios, '9.0'
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '12.0'
-
 target 'MapSDKSwiftUI' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for MapSDKSwiftUI
   pod 'GoogleMaps', '6.2.1'
+  pod 'ToastUI'
 
   target 'MapSDKSwiftUITests' do
     inherit! :search_paths
